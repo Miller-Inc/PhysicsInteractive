@@ -20,7 +20,7 @@ Full instructions are located in the README.md file in the library repository.
 To use the library, you can include the header files in your project and use the classes and functions provided by the library.
 
 ## Licensing 
-This project is licensed under the MIT License. You can view the license [here](https://github.com/Miller-Inc/PhysicsInteractive/blob/master/LICENSE.txt). 
+This project is licensed under the GNU GENERAL PUBLIC License. You can view the license [here](https://github.com/Miller-Inc/PhysicsInteractive/blob/master/LICENSE.txt). 
 
 ## Contributing
 If you would like to contribute to the project, you can fork the repository and submit a pull request with your changes. 
