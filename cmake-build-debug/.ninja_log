@@ -1,0 +1,6 @@
+# ninja log v6
+1	194	7501845879601240	build.ninja	3b884a4360e131c6
+295	369	7501381555365252	PhysicsInteractive.exe	256b4f26c1556d94
+5	850	7501844906683837	CMakeFiles/PhysicsInteractive.dir/main.cpp.obj	5eae22f73c123740
+4	825	7501846908679903	CMakeFiles/PhysicsInteractive.dir/main.cpp.obj	5eae22f73c123740
+825	903	7501846916895154	PhysicsInteractive.exe	256b4f26c1556d94
