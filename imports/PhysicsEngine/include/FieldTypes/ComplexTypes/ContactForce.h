@@ -11,18 +11,18 @@ class ContactForce : Force
 {
     Vector3 contactPoint;
 
-    explicit ContactForce(const Vector3 force) : ContactForce(force, Vector3(0, 0, 0))
+    explicit ContactForce(Vector3* force) : ContactForce(force, Vector3(0, 0, 0))
     {
 
     }
 
-    ContactForce(const Vector3 force, const Vector3 contactPoint) : ContactForce(force, contactPoint, 0)
+    ContactForce(Vector3* force, const Vector3 contactPoint) : ContactForce(force, contactPoint, 0)
     {
         this->contactPoint = contactPoint;
         this->force = force;
     }
 
-    ContactForce(const Vector3 force, const Vector3 contactPoint, const float timeApplied) : Force(force, timeApplied)
+    ContactForce(Vector3* force, const Vector3 contactPoint, const float timeApplied) : Force(force, timeApplied)
     {
         this->contactPoint = contactPoint;
         this->force = force;
@@ -31,10 +31,10 @@ class ContactForce : Force
 
     [[nodiscard]] Vector3 torque() const
     {
-        return Vector3::cross(contactPoint, force);
+        return Vector3::cross(&contactPoint, force);
     }
 
-    [[nodiscard]] Vector3 get_force() const override;
+    [[nodiscard]] Vector3* get_force() const override;
 };
 
 #endif //CONTACTFORCE_H

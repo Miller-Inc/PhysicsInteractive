@@ -12,15 +12,16 @@ class ImpulseObject : public BaseObject
 {
 public:
 
-    Vector3 currentMomentum;
+    Vector3* currentMomentum;
 
     virtual void ApplyImpulse(const Vector3& impulse) = 0;
+    virtual void ApplyImpulse(const Vector3* impulse) = 0;
+
     virtual void ApplyImpulse(const Vector3& impulse, const Vector3& position) = 0;
     virtual void ApplyAngularImpulse(const Quaternion& impulse) = 0;
     virtual void ApplyTorqueImpulse(const Vector3& impulse) = 0;
     virtual void ApplyTorqueImpulse(const Vector3& impulse, const Vector3& position) = 0;
     virtual void ApplyTorqueImpulse(const Vector3& impulse, const Vector3& position, const Vector3& axis) = 0;
-
 };
 
 

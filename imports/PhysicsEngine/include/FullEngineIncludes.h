@@ -16,6 +16,11 @@
 // Complex Types
 #include "FieldTypes/ComplexTypes/Force.h"
 #include "FieldTypes/ComplexTypes/ContactForce.h"
+#include "FieldTypes/ComplexTypes/PosVariableForce.h"
+    // Position Forces
+    #include "FieldTypes/ComplexTypes/PositionForces/GravityForce.h"
+    #include "FieldTypes/ComplexTypes/PositionForces/SpringForce.h"
+    #include "FieldTypes/ComplexTypes/PositionForces/DragForce.h"
 
 // Physics Engine
     // Object Types
@@ -27,6 +32,8 @@
 
             // Simple Shapes
             #include "PhysicsObjects/Collidables/SimpleShapes/Sphere.h"
+            #include "PhysicsObjects/Collidables/SimpleShapes/Cube.h"
+            #include "PhysicsObjects/Collidables/SimpleShapes/FlatSheet.h"
 
     // Scene Types
     #include "PhysicsEngine/Scenes/Scene.h"

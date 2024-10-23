@@ -15,7 +15,22 @@ class Scene
 {
 public:
 
-    Scene() = default;
+    static bool debug()
+    {
+        return debugMode;
+    }
+
+    static void setDebug(const bool debug)
+    {
+        debugMode = debug;
+    }
+
+    static bool debugMode;
+
+    Scene()
+    {
+        debugMode = false;
+    }
 
     std::vector<BaseObject*> sceneObjects;
 
@@ -27,16 +42,13 @@ public:
 
     void main(float time, bool print);
 
-    std::vector<CollisionObject> collisionObjects;
+    std::vector<CollisionObject*> collisionObjects;
 
     std::vector<CollisionObject> collidedObjects;
 
     std::vector<CollisionObject*> getCollisions(CollisionObject* object);
 
-    void AddObject(BaseObject* object)
-    {
-        sceneObjects.push_back(object);
-    }
+    void AddObject(BaseObject* object);
 
     void step(float timestep);
 

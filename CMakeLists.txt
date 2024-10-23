@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.29)
 project(PhysicsInteractive)
 
-set(CMAKE_CXX_STANDARD 26)
+set(CMAKE_CXX_STANDARD 23)
 
 set(LIBRARY_PATH ${CMAKE_CURRENT_SOURCE_DIR}/imports/PhysicsEngine/libPhysicsEngine.a)
 set(INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/imports/PhysicsEngine/include)
