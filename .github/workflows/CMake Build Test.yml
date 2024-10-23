@@ -1,0 +1,38 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install CMake
+        run: sudo apt-get install cmake
+
+      #- name: Set up permissions for configure script
+      #  run: chmod +x ./configure
+
+      #- name: configure
+      #  run: ./configure
+
+      - name: make
+        run: make
+
+      - name: Archive static library
+        if: success()
+        run: mkdir -p artifacts && sudo cp ./libPhysicsEngine.a artifacts/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-library
+          path: artifacts/
