@@ -24,8 +24,8 @@ jobs:
       #- name: configure
       #  run: ./configure
 
-      - name: make
-        run: make
+      - name: cmake
+        run: cmake .
 
       - name: Archive static library
         if: success()
