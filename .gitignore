@@ -5,3 +5,6 @@
 /cmake-build-debug
 /cmake-build-minsizerel
 /cmake-build-relwithdebinfo
+/cmake-build-debug
+cmake-build-debug/Testing/Temporary/LastTest.log
+/cmake-build-debug
