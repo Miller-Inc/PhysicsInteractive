@@ -1,0 +1,3 @@
+[submodule "MillerInc.PhysicsEngine"]
+	path = MillerInc.PhysicsEngine
+	url = https://github.com/Miller-Inc/MillerInc.PhysicsEngine.git

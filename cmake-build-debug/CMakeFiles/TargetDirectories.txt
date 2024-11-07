@@ -1,3 +1,0 @@
-C:/Users/jwmil/MillerInc.GPU/PhysicsInteractive/cmake-build-debug/CMakeFiles/PhysicsInteractive.dir
-C:/Users/jwmil/MillerInc.GPU/PhysicsInteractive/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/jwmil/MillerInc.GPU/PhysicsInteractive/cmake-build-debug/CMakeFiles/rebuild_cache.dir
